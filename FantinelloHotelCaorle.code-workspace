@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../Downloads/favicon"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "FantinelloHotelCaorle"
+	}
+}

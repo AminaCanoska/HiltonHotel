@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ristorante Le Tentazioni</title>
+
+  <!-- Bootstrap 5.3.3 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-glass fixed-top">
+  <div class="container">
+    <img src="img/logo.png" class="navbar-brand" style="width: 90px"></img>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto align-items-center position-relative">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="camere.html">Camere</a>
+        <a class="nav-link" href="ristorante.html">Ristorante</a>
+        <a class="nav-link" href="sport-relax.html">Sport & Relax</a>
+        <a class="nav-link" href="#" id="contattiLink" style="position: relative;">Contatti</a>
+        <a class="nav-link" href="#" id="languageSwitcher">IT <i class="bi bi-translate"></i></a>
+        <div id="languageDropdown" aria-labelledby="languageSwitcher">
+          <a href="english.html" alt="English Version" target="_blank"><i class="bi bi-arrow-right-circle-fill"></i>English 🇬🇧</a>
+          <a href="tedesco.html" alt="German Version" target="_blank"><i class="bi bi-arrow-right-circle-fill"></i>German 🇧🇪</a>
+        </div>
+
+        <!-- Dropdown contatti -->
+        <div id="contactsDropdown" aria-labelledby="contattiLink">
+          <a href="tel:+390123456789"><i class="bi bi-telephone-fill"></i> +39 012 3456789</a>
+          <a href="https://wa.me/390123456789" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+          <a href="mailto:info@fantinellohotel.it"><i class="bi bi-envelope-fill"></i> info@fantinellohotel.it</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="ristorante-section" id="ristorante">
+  <div class="container container-narrow">
+
+    <!-- Selezione Menu -->
+    <ul class="nav nav-tabs justify-content-center mb-5" id="menuTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="antipasti-tab" data-bs-toggle="tab" data-bs-target="#antipasti" type="button" role="tab" aria-controls="antipasti" aria-selected="true">Antipasti</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="primi-tab" data-bs-toggle="tab" data-bs-target="#primi" type="button" role="tab" aria-controls="primi" aria-selected="false">Primi</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="secondi-tab" data-bs-toggle="tab" data-bs-target="#secondi" type="button" role="tab" aria-controls="secondi" aria-selected="false">Secondi</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="dolci-tab" data-bs-toggle="tab" data-bs-target="#dolci" type="button" role="tab" aria-controls="dolci" aria-selected="false">Dolci</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="menuTabsContent">
+
+      <!-- Antipasti -->
+      <div class="tab-pane fade show active" id="antipasti" role="tabpanel" aria-labelledby="antipasti-tab">
+        <div class="row">
+          <div class="col-md-4 mb-4" data-aos="fade-up">
+            <div class="card border-0 ristorante-card h-100">
+              <img src="img/tartare.jpg" class="card-img-top img-fixed" alt="Tartare di Tonno Rosso">
+              <div class="card-body">
+                <h5 class="card-title">Tartare di Tonno Rosso</h5>
+                <p class="card-text">Con lime, avocado e granella di pistacchio.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card border-0 ristorante-card h-100">
+              <img src="img/carpaccio.jpg" class="card-img-top img-fixed" alt="Carpaccio di Manzo">
+              <div class="card-body">
+                <h5 class="card-title">Carpaccio di Manzo</h5>
+                <p class="card-text">Rucola, scaglie di grana e riduzione al balsamico.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card border-0 ristorante-card h-100">
+              <img src="img/formaggi.jpg" class="card-img-top img-fixed" alt="Selezione di Formaggi Locali">
+              <div class="card-body">
+                <h5 class="card-title">Selezione di Formaggi Locali</h5>
+                <p class="card-text">Accompagnata da mostarde artigianali.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Primi -->
+      <div class="tab-pane fade" id="primi" role="tabpanel" aria-labelledby="primi-tab">
+        <div class="row">
+          <div class="col-md-4 mb-4" data-aos="fade-up">
+            <div class="card border-0 ristorante-card h-100">
+              <img src="img/risotto.jpg" class="card-img-top img-fixed" alt="Risotto al Nero di Seppia">
+              <div class="card-body">
+                <h5 class="card-title">Risotto al Nero di Seppia</h5>
+                <p class="card-text">Con crema di burrata e zest di limone.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card border-0 ristorante-card h-100">
+              <img src="img/tagliolini.jpg" class="card-img-top img-fixed" alt="Tagliolini al Ragù d'Anatra">
+              <div class="card-body">
+                <h5 class="card-title">Tagliolini al Ragù d'Anatra</h5>
+                <p class="card-text">Profumati al rosmarino.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card border-0 ristorante-card h-100">
+              <img src="img/gnocchi.jpg" class="card-img-top img-fixed" alt="Gnocchi di Patate Viola">
+              <div class="card-body">
+                <h5 class="card-title">Gnocchi di Patate Viola</h5>
+                <p class="card-text">Fonduta di asiago e noci tostate.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secondi -->
+      <div class="tab-pane fade" id="secondi" role="tabpanel" aria-labelledby="secondi-tab">
+        <div class="row">
+          <div class="col-md-4 mb-4" data-aos="fade-up">
+            <div class="card border-0 ristorante-card h-100">
+              <img src="img/branzino.jpg" class="card-img-top img-fixed" alt="Branzino al Forno">
+              <div class="card-body">
+                <h5 class="card-title">Branzino al Forno</h5>
+                <p class="card-text">Con patate al rosmarino e pomodorini confit.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card border-0 ristorante-card h-100">
+              <img src="img/manzo.jpg" class="card-img-top img-fixed" alt="Filetto di Manzo alla Griglia">
+              <div class="card-body">
+                <h5 class="card-title">Filetto di Manzo alla Griglia</h5>
+                <p class="card-text">Salsa al pepe verde e verdure croccanti.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card border-0 ristorante-card h-100">
+              <img src="img/polpo.jpg" class="card-img-top img-fixed" alt="Polpo Arrosto">
+              <div class="card-body">
+                <h5 class="card-title">Polpo Arrosto</h5>
+                <p class="card-text">Su crema di ceci e paprika affumicata.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dolci -->
+      <div class="tab-pane fade" id="dolci" role="tabpanel" aria-labelledby="dolci-tab">
+        <div class="row">
+          <div class="col-md-4 mb-4" data-aos="fade-up">
+            <div class="card border-0 ristorante-card h-100">
+              <img src="img/tiramisu.jpg" class="card-img-top img-fixed" alt="Tiramisù Scomposto">
+              <div class="card-body">
+                <h5 class="card-title">Tiramisù Scomposto</h5>
+                <p class="card-text">Crema al mascarpone e crumble di cacao.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card border-0 ristorante-card h-100">
+              <img src="img/semifreddo.jpg" class="card-img-top img-fixed" alt="Semifreddo alle Nocciole">
+              <div class="card-body">
+                <h5 class="card-title">Semifreddo alle Nocciole</h5>
+                <p class="card-text">Con cuore di cioccolato fondente.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card border-0 ristorante-card h-100">
+              <img src="img/mousse.jpg" class="card-img-top img-fixed" alt="Mousse al Frutto della Passione">
+              <div class="card-body">
+                <h5 class="card-title">Mousse al Frutto della Passione</h5>
+                <p class="card-text">Glassa allo yuzu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer -->
+
+<!-- Google Maps -->
+<div class="map-container text-center">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.0557178739377!2d12.893785276026568!3d45.6095242710767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477bf19574795105%3A0x42dd22154d790cc1!2sFantinello%20Hotel!5e0!3m2!1sen!2sit!4v1751661258814!5m2!1sen!2sit" 
+  width="1400"
+  height="450" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light pt-5">
+  <div class="container">
+    <div class="row gy-4">
+      
+      <!-- Contatti -->
+      <div class="col-md-4 text-center">
+        <h5>Contatti</h5>
+        <p class="mb-1">Via Pola, 1 - Spiaggia di Levante<br>30021 Caorle (VE) – ITALY</p>
+        <p class="mb-1">📞 +39 0421 81570</p>
+        <p class="mb-0">✉️ <a href="mailto:booking@fantinellohotel.it" class="link-light">booking@fantinellohotel.it</a></p>
+      </div>
+
+      <!-- Orari apertura -->
+      <div class="col-md-4 text-center">
+        <h5>Orari di apertura</h5>
+        <p class="mb-1">Apertura stagionale:</p>
+        <p class="mb-0">dal <strong>17 aprile 2025</strong><br>tutti i giorni dalle <strong>10:00</strong> alle <strong>22:00</strong></p>
+      </div>
+
+      <!-- Social & Promozioni -->
+      <div class="col-md-4 text-center">
+        <h5>Seguici</h5>
+        <a href="#" class="text-light me-2 fs-4"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-light me-2 fs-4"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-light fs-4"><i class="bi bi-twitter"></i></a>
+        <hr class="border-secondary my-3">
+        <h5>Offerta Early Booking</h5>
+        <p class="mb-2">Prenota in anticipo e risparmia!</p>
+        <a href="#booking" class="btn btn-outline-light btn-sm">Scopri l'offerta</a>
+      </div>
+    </div>
+
+    <div class="text-center mt-4 py-3 border-top border-secondary">
+      <small>&copy; 2025 Hilton Hotel di Caorle. Tutti i diritti riservati.</small>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false
+  });
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>
+

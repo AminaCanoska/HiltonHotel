@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sport & Relax - Hotel</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="sr-body">
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-glass fixed-top">
+  <div class="container">
+    <img src="img/logo.png" class="navbar-brand" style="width: 90px"></img>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto align-items-center position-relative">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="camere.html">Camere</a>
+        <a class="nav-link" href="ristorante.html">Ristorante</a>
+        <a class="nav-link" href="sport-relax.html">Sport & Relax</a>
+        <a class="nav-link" href="#" id="contattiLink" style="position: relative;">Contatti</a>
+        <a class="nav-link" href="#" id="languageSwitcher">IT <i class="bi bi-translate"></i></a>
+        <div id="languageDropdown" aria-labelledby="languageSwitcher">
+          <a href="english.html" alt="English Version" target="_blank"><i class="bi bi-arrow-right-circle-fill"></i>English 🇬🇧</a>
+          <a href="tedesco.html" alt="German Version" target="_blank"><i class="bi bi-arrow-right-circle-fill"></i>German 🇧🇪</a>
+        </div>
+
+        <!-- Dropdown contatti -->
+        <div id="contactsDropdown" aria-labelledby="contattiLink">
+          <a href="tel:+390123456789"><i class="bi bi-telephone-fill"></i> +39 012 3456789</a>
+          <a href="https://wa.me/390123456789" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+          <a href="mailto:info@fantinellohotel.it"><i class="bi bi-envelope-fill"></i> info@fantinellohotel.it</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  <header class="sr-header">
+    <h1 class="sr-header-title">Sport & Relax</h1>
+    <p class="sr-header-lead">Scopri le attività per il tuo benessere e divertimento</p>
+  </header>
+
+  <main class="sr-container py-5">
+
+    <!-- Sezione Sport -->
+    <section id="sr-sport" class="mb-5">
+      <h2 class="sr-section-title" data-aos="fade-up">Attività Sportive</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card sr-card h-100">
+            <img src="img/tennis.jpg" class="card-img-top sr-card-img" alt="Campo da Tennis" />
+            <div class="card-body sr-card-body">
+              <h5 class="card-title">Campo da Tennis</h5>
+              <p class="card-text">Due campi in erba sintetica con illuminazione serale.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card sr-card h-100">
+            <img src="img/piscina.jpg" class="card-img-top sr-card-img" alt="Piscina Coperta" />
+            <div class="card-body sr-card-body">
+              <h5 class="card-title">Piscina Coperta</h5>
+              <p class="card-text">Piscina riscaldata per nuotate rigeneranti tutto l'anno.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card sr-card h-100">
+            <img src="img/palestra.jpg" class="card-img-top sr-card-img" alt="Palestra Attrezzata" />
+            <div class="card-body sr-card-body">
+              <h5 class="card-title">Palestra Attrezzata</h5>
+              <p class="card-text">Macchine cardio e pesi per allenamenti personalizzati.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Sezione Relax -->
+    <section id="sr-relax">
+      <h2 class="sr-section-title" data-aos="fade-up">Area Relax & Benessere</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card sr-card h-100">
+            <img src="img/sauna.jpg" class="card-img-top sr-card-img" alt="Sauna Finlandese" />
+            <div class="card-body sr-card-body">
+              <h5 class="card-title">Sauna Finlandese</h5>
+              <p class="card-text">Rilassati con calore secco e purifica il corpo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card sr-card h-100">
+            <img src="img/massaggi.jpg" class="card-img-top sr-card-img" alt="Massaggi e Trattamenti" />
+            <div class="card-body sr-card-body">
+              <h5 class="card-title">Massaggi & Trattamenti</h5>
+              <p class="card-text">Esperti terapisti per un relax profondo su misura.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card sr-card h-100">
+            <img src="img/yoga.jpg" class="card-img-top sr-card-img" alt="Lezioni di Yoga" />
+            <div class="card-body sr-card-body">
+              <h5 class="card-title">Lezioni di Yoga</h5>
+              <p class="card-text">Sessioni giornaliere per migliorare corpo e mente.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  
+<!-- Footer -->
+
+<!-- Google Maps -->
+<div class="map-container text-center">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.0557178739377!2d12.893785276026568!3d45.6095242710767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477bf19574795105%3A0x42dd22154d790cc1!2sFantinello%20Hotel!5e0!3m2!1sen!2sit!4v1751661258814!5m2!1sen!2sit" 
+  width="1400"
+  height="450" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light pt-5">
+  <div class="container">
+    <div class="row gy-4">
+      
+      <!-- Contatti -->
+      <div class="col-md-4 text-center">
+        <h5>Contatti</h5>
+        <p class="mb-1">Via Pola, 1 - Spiaggia di Levante<br>30021 Caorle (VE) – ITALY</p>
+        <p class="mb-1">📞 +39 0421 81570</p>
+        <p class="mb-0">✉️ <a href="mailto:booking@fantinellohotel.it" class="link-light">booking@fantinellohotel.it</a></p>
+      </div>
+
+      <!-- Orari apertura -->
+      <div class="col-md-4 text-center">
+        <h5>Orari di apertura</h5>
+        <p class="mb-1">Apertura stagionale:</p>
+        <p class="mb-0">dal <strong>17 aprile 2025</strong><br>tutti i giorni dalle <strong>10:00</strong> alle <strong>22:00</strong></p>
+      </div>
+
+      <!-- Social & Promozioni -->
+      <div class="col-md-4 text-center">
+        <h5>Seguici</h5>
+        <a href="#" class="text-light me-2 fs-4"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-light me-2 fs-4"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-light fs-4"><i class="bi bi-twitter"></i></a>
+        <hr class="border-secondary my-3">
+        <h5>Offerta Early Booking</h5>
+        <p class="mb-2">Prenota in anticipo e risparmia!</p>
+        <a href="#booking" class="btn btn-outline-light btn-sm">Scopri l'offerta</a>
+      </div>
+    </div>
+
+    <div class="text-center mt-4 py-3 border-top border-secondary">
+      <small>&copy; 2025 Hilton Hotel di Caorle. Tutti i diritti riservati.</small>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false
+  });
+</script>
+<script src="script.js"></script>
+
+
+
+</body>
+</html>

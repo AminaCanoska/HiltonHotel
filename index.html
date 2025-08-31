@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilton Hotel - Caorle</title>
+    <meta name="description" content="Hilton Hotel Caorle: hotel 4 stelle fronte mare con piscina, ristorante, camere moderne e servizi esclusivi. Prenota la tua vacanza ideale a Caorle.">
+    <meta name="keywords" content="hotel caorle, hotel 4 stelle caorle, hotel fronte mare, vacanze caorle, hotel con piscina, hotel per famiglie, hotel con ristorante, Hilton Hotel">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="Hilton Hotel Caorle">
+    <link rel="canonical" href="https://fantinellohotel.com">
+    <!--FAVICON-->
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hilton Hotel Caorle | Hotel 4 Stelle sul Mare">
+    <meta property="og:description" content="Hilton Hotel Caorle: hotel 4 stelle fronte mare con piscina, ristorante, camere moderne e servizi esclusivi. Prenota la tua vacanza ideale a Caorle.">
+    <meta property="og:url" content="https://fantinellohotel.com">
+    <meta property="og:image" content="https://fantinellohotel.com/images/img.jpg">
+    <meta property="og:site_name" content="Hilton Hotel Caorle">
+    <meta property="og:locale" content="it_IT">
+
+    <!-- Social Profiles -->
+    <meta property="og:see_also" content="https://it-it.facebook.com/fantinellohotel.it/">
+    <meta property="og:see_also" content="https://www.instagram.com/hotelfantinello.caorle/">
+    <meta property="og:see_also" content="https://www.youtube.com/channel/UCtX11dCQVhVmwEM6-pOKLRA?app=desktop">
+    <!-- Indicizzazione e snippet -->
+
+    <!-- Google Site Verification (se usi Search Console) -->
+    <!-- <meta name="google-site-verification" content="CODICE_VERIFICA_GOOGLE" /> -->
+
+    <!-- Schema.org per Hotel (dati strutturati JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hotel",
+      "name": "Hilton Hotel Caorle",
+      "image": "https://www.fantinellohotel.com/images/img.jpg",
+      "url": "https://fantinellohotel.com",
+      "telephone": "+39 0421 81570",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Pola, 1 (Spiaggia di Levante)",
+        "addressLocality": "Caorle",
+        "postalCode": "30021",
+        "addressCountry": "IT"
+      },
+      "description": "Hilton Hotel Caorle: hotel 4 stelle fronte mare con piscina, ristorante, camere moderne e servizi esclusivi.",
+      "priceRange": "€€€",
+      "starRating": {
+        "@type": "Rating",
+        "ratingValue": "4",
+        "bestRating": "5"
+      },
+      "sameAs": [
+        "https://it-it.facebook.com/fantinellohotel.it/",
+        "https://www.instagram.com/hotelfantinello.caorle/",
+        "https://www.youtube.com/channel/UCtX11dCQVhVmwEM6-pOKLRA?app=desktop"
+      ]
+    }
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-glass fixed-top">
+  <div class="container">
+    <img src="img/logo.png" class="navbar-brand" style="width: 90px"></img>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto align-items-center position-relative">
+        <a class="nav-link active" href="index.html">Home</a>
+        <a class="nav-link" href="camere.html">Camere</a>
+        <a class="nav-link" href="ristorante.html">Ristorante</a>
+        <a class="nav-link" href="sport-relax.html">Sport & Relax</a>
+        <a class="nav-link" href="#" id="contattiLink" style="position: relative;">Contatti</a>
+        <a class="nav-link" href="#" id="languageSwitcher">IT <i class="bi bi-translate"></i></a>
+        <div id="languageDropdown" aria-labelledby="languageSwitcher">
+          <a href="english.html" alt="English Version" target="_blank"><i class="bi bi-arrow-right-circle-fill"></i>English 🇬🇧</a>
+          <a href="tedesco.html" alt="German Version" target="_blank"><i class="bi bi-arrow-right-circle-fill"></i>German 🇧🇪</a>
+        </div>
+
+        <!-- Dropdown contatti -->
+        <div id="contactsDropdown" aria-labelledby="contattiLink">
+          <a href="tel:+394525422"><i class="bi bi-telephone-fill"></i> +39 445 5452525</a>
+          <a href="https://wa.me/3904526247" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+          <a href="mailto:info@fantinellohotel.it"><i class="bi bi-envelope-fill"></i> info@hiltonhotel.it</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Carosello -->
+<div id="hotelCarousel" class="carousel slide hotel-carousel" data-bs-ride="carousel">
+  <div class="carousel-inner position-relative" style="height: 70vh;">
+    <div class="carousel-item active position-relative">
+      <img
+        src="img/background.jpg"
+        class="d-block"
+        alt="Vista Hotel 1"
+        style="object-fit: cover;"
+      />
+      <div class="carousel-caption text-white text-center px-3">
+        <h2 class="fw-bold">Benvenuti al Hilton Hotel</h2>
+        <p class="mb-3">Un'oasi di comfort e relax a Caorle</p>
+        <a href="#" class="btn btn-lg other-buttons availability-btn">Verifica Disponibilità</a>
+      </div>
+    </div>
+    <div class="carousel-item position-relative">
+      <img
+        src="img/background-2.jpg"
+        class="d-block"
+        alt="Vista Hotel 2"
+        style="object-fit: cover;"
+      />
+      <div class="carousel-caption text-white text-center px-3">
+        <h2 class="fw-bold">Camere Eleganti</h2>
+        <p class="mb-3">Spazi accoglienti con vista mare</p>
+        <a href="#" class="btn btn-lg other-buttons availability-btn">Verifica Disponibilità</a>
+      </div>
+    </div>
+    <div class="carousel-item position-relative">
+      <img
+        src="img/background-3.jpg"
+        class="d-block"
+        alt="Vista Hotel 3"
+        style="object-fit: cover;"
+      />
+      <div class="carousel-caption text-white text-center px-3">
+        <h2 class="fw-bold">Relax e Benessere</h2>
+        <p class="mb-3">Piscina, spa e tanto altro per il tuo comfort</p>
+        <a href="#" class="btn btn-lg other-buttons availability-btn">Verifica Disponibilità</a>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev"
+    type="button"
+    data-bs-target="#hotelCarousel"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Precedente</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#hotelCarousel"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Successivo</span>
+  </button>
+</div>
+<!-- Modale Verifica Disponibilità -->
+<div class="modal fade" id="availabilityModal" tabindex="-1" aria-labelledby="availabilityModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="border-radius: var(--radius);">
+      <div class="modal-header">
+        <h5 class="modal-title" id="availabilityModalLabel">Verifica disponibilità</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi"></button>
+      </div>
+      <div class="modal-body">
+        <form id="availabilityForm">
+          <div class="mb-3">
+            <label for="checkin" class="form-label">Check-in</label>
+            <input type="date" class="form-control" id="checkin" required />
+          </div>
+          <div class="mb-3">
+            <label for="checkout" class="form-label">Check-out</label>
+            <input type="date" class="form-control" id="checkout" required />
+          </div>
+          <div class="mb-3">
+            <label for="guests" class="form-label">Ospiti</label>
+            <input type="number" class="form-control" id="guests" min="1" max="10" required />
+          </div>
+          <button type="submit" class="btn btn-primary">Controlla</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Highlight Section -->
+<section class="container py-3 ">
+  <h2 class="mb-4 text-center" data-aos="fade-up">I nostri Highlight</h2>
+  <div class="row text-center g-4">
+    <div class="col-md-3" data-aos="fade-up">
+      <span class="highlight-icon">
+        <i class="bi bi-droplet"></i>
+      </span>
+      <div class="highlight-background" data-aos="fade-up">
+      <h5 class="mt-3">Piscina & Area Wellness</h5>
+      <p>Idromassaggio e giochi d'acqua per famiglie e relax.</p>
+      </div>
+    </div>
+    <div class="col-md-3" data-aos="fade-up">
+       <span class="highlight-icon">
+        <i class="bi bi-umbrella"></i>
+      </span>
+      <div class="highlight-background" data-aos="fade-up">
+      <h5 class="mt-3">Spiaggia Privata</h5>
+      <p>Accesso diretto alla levante di Caorle.</p>
+      </div>
+    </div>
+    <div class="col-md-3" data-aos="fade-up">
+      <span class="highlight-icon">
+        <i class="bi bi-bicycle"></i>
+      </span>
+      <div class="highlight-background" data-aos="fade-up">
+      <h5 class="mt-3">Sport & Natura</h5>
+      <p>Mini-golf, tennis, padel, bocce e noleggio biciclette.</p>
+      </div>
+    </div>
+    <div class="col-md-3" data-aos="fade-up">
+      <span class="highlight-icon">
+        <i class="bi bi-emoji-smile "></i>
+      </span>
+      <div class="highlight-background" data-aos="fade-up">
+      <h5 class="mt-3">Pet-friendly</h5>
+      <p>Accogliente anche per i tuoi amici a 4 zampe.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-5 bg-light" id="camere-preview">
+  <div class="container">
+    <h2 class="text-center mb-5">Un nuovo modo di vivere la camera</h2>
+    <div class="row g-4">
+
+      <!-- Camera 1 -->
+      <div class="col-md-4">
+        <div class="camere-box position-relative overflow-hidden rounded-3" data-aos="fade-right">
+          <img src="img/suite-deluxe.jpg" alt="Suite Deluxe" class="w-100 h-100 object-cover">
+          <div class="camere-overlay d-flex flex-column justify-content-center align-items-center text-white text-center px-3">
+            <h5 class="fw-bold">Suite Deluxe</h5>
+            <p class="small">45m² · Vista mare</p>
+            <a href="camere.html" class="btn btn-outline-light btn-sm mt-2">Scopri di più</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Camera 2 -->
+      <div class="col-md-4">
+        <div class="camere-box position-relative overflow-hidden rounded-3" data-aos="fade-up">
+          <img src="img/junior-suite.jpg" alt="Junior Suite" class="w-100 h-100 object-cover">
+          <div class="camere-overlay d-flex flex-column justify-content-center align-items-center text-white text-center px-3">
+            <h5 class="fw-bold">Junior Suite</h5>
+            <p class="small">32m² · 2-4 persone</p>
+            <a href="camere.html" class="btn btn-outline-light btn-sm mt-2">Scopri di più</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Camera 3 -->
+      <div class="col-md-4">
+        <div class="camere-box position-relative overflow-hidden rounded-3" data-aos="fade-left">
+          <img src="img/family-room.jpg" alt="Cemera Family" class="w-100 h-100 object-cover">
+          <div class="camere-overlay d-flex flex-column justify-content-center align-items-center text-white text-center px-3">
+            <h5 class="fw-bold">Camera Family</h5>
+            <p class="small">24m² · Comfort essenziale</p>
+            <a href="camere.html" class="btn btn-outline-light btn-sm mt-2">Scopri di più</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="camere.html" class="btn btn-lg other-buttons">Vedi tutte le camere</a>
+    </div>
+  </div>
+</section>
+<section class="restaurant-container py-5 position-relative text-dark overflow-hidden" id="ristorante">
+  <div class="container position-relative" style="z-index:2">
+
+    <!-- Introduzione -->
+     <div class="row mb-5" data-aos="fade-up">
+        <h2 class="display-4 text-center fw-bold mb-3">Ristorante “Le Tentazioni”</h2>
+        <p class="lead">Un’esperienza gourmet con <strong>cene a tema fronte mare</strong> e piatti che mescolano tipicità e innovazione</p>
+        <ul class="list-unstyled mb-4">
+          <li>👨‍🍳 Percorso degustazione curato dallo Chef Michele (25+ anni d’esperienza)</li>
+          <li>🌱 Prodotti locali, stagionalità e rispetto per l’ambiente</li>
+          <li>🌅 Colazione, light lunch e cena con vista piscina o mare</li>
+        </ul>
+
+    <!-- Piatti principali -->
+    <!-- 1) Immagine a sinistra, testo a destra -->
+    <div class="row align-items-center mb-5 mx-auto">
+      <div class="col-lg-6 my-3" data-aos="zoom-out-right">
+        <img src="img/ristorante-hotel1.jpeg" alt="Piatto gourmet Ristorante Le Tentazioni" class="img-fluid rounded-3 shadow animate__slideInLeft">
+      </div>
+      <div class="col-lg-6" data-aos="zoom-out-left">
+        <h3 class="fw-bold mb-3">Percorso Degustazione Gourmet</h3>
+        <p>
+          Un viaggio culinario che mette in risalto ingredienti locali e stagionali, scelti con cura per garantirti sapori autentici e innovativi. Lo chef Michele propone piatti che sono un vero e proprio spettacolo per gli occhi e per il palato.
+        </p>
+      </div>
+    </div>
+
+    <!-- 2) Testo a sinistra, immagine a destra -->
+    <div class="row align-items-center mb-5 mx-auto">
+      <div class="col-lg-6 order-lg-2 my-3" data-aos="zoom-out-left">
+        <img src="img/ristorante-hotel2.jpg" alt="Secondo piatto Ristorante Le Tentazioni" class="img-fluid rounded-3 shadow animate__animated animate__slideInRight">
+      </div>
+      <div class="col-lg-6 order-lg-1" data-aos="zoom-out-right">
+        <h3 class="fw-bold mb-3">Piatti a base di Prodotti Locali</h3>
+        <p>
+          La nostra cucina valorizza le materie prime del territorio, rispettando la stagionalità e l’ambiente. Ogni piatto racconta una storia, fatta di passione, tradizione e attenzione al dettaglio.
+        </p>
+      </div>
+    </div>
+
+    <!-- 3) Immagine a sinistra, testo a destra -->
+    <div class="row align-items-center mb-5 mx-auto">
+      <div class="col-lg-6 my-3" data-aos="zoom-out-right">
+        <img src="img/ristorante-hotel3.jpg" alt="Dessert Ristorante Le Tentazioni" class="img-fluid rounded-3 shadow animate__animated animate__slideInLeft">
+      </div>
+      <div class="col-lg-6" data-aos="zoom-out-left">
+        <h3 class="fw-bold mb-3">Dessert Creativi e Golosi</h3>
+        <p>
+          Termina il tuo pasto con dolci artigianali e innovativi, preparati con ingredienti freschi e di qualità, per un’esperienza completa e indimenticabile.
+        </p>
+      </div>
+    </div>
+
+    <!-- 4) Testo a sinistra, immagine a destra -->
+    <div class="row align-items-center mb-5 mx-auto">
+      <div class="col-lg-6 order-lg-2 my-3" data-aos="zoom-out-left">
+        <img src="img/ristorante-hotel4.jpg" alt="Vista piscina e mare Ristorante Le Tentazioni" class="img-fluid rounded-3 shadow animate__animated animate__slideInRight">
+      </div>
+      <div class="col-lg-6 order-lg-1" data-aos="zoom-out-right">
+        <h3 class="fw-bold mb-3">Atmosfera e Vista Unica</h3>
+        <p>
+          Goditi le tue cene con vista piscina o mare, in un ambiente elegante e rilassante, perfetto per ogni occasione, dal pranzo leggero alla cena romantica.
+        </p>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a href="/ristorante-le-tentazioni-a-caorle/" class="btn btn-lg animate__animated animate__pulse animate__infinite other-buttons">Scopri il menù completo</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="py-5 bg-light" id="galleria">
+  <div class="container">
+    <h2 class="mb-4 text-center fw-bold" data-aos="fade-down">Gallery: Esplora l’Hotel Fantinello</h2>
+    <p class="text-center mb-5" data-aos="fade-up">
+      Vivi la magia tra natura, comfort e accoglienza. Ecco alcuni scorci che raccontano la nostra filosofia.
+    </p>
+
+    <!-- Galleria -->
+    <div class="row g-4">
+      <!-- 1: Piscina -->
+      <div class="col-12 col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="100">
+        <div class="card border-0 shadow h-100">
+          <img src="img/gallery-piscina.jpg" class="card-img-top" alt="Piscina Fantinello">
+          <div class="card-body">
+            <h5 class="card-title">Piscina & Relax</h5>
+            <p class="card-text">Una piscina immersa nel verde, perfetta per rilassarsi sotto il sole di Caorle.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2: Giardino -->
+      <div class="col-12 col-md-6 col-lg-3" data-aos="flip-right" data-aos-delay="200">
+        <div class="card border-0 shadow h-100">
+          <img src="img/gallery-giardino.jpg" class="card-img-top" alt="Giardino Fantinello">
+          <div class="card-body">
+            <h5 class="card-title">Giardini Rigogliosi</h5>
+            <p class="card-text">Spazi verdi curati, ideali per passeggiare o rilassarsi all’ombra degli alberi.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3: Animali -->
+      <div class="col-12 col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
+        <div class="card border-0 shadow h-100">
+          <img src="img/gallery-animali.jpg" class="card-img-top" alt="Animali Fantinello">
+          <div class="card-body">
+            <h5 class="card-title">Amici a 4 zampe</h5>
+            <p class="card-text">Siamo un pet-friendly hotel: i tuoi animali sono sempre i benvenuti.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4: Camere -->
+      <div class="col-12 col-md-6 col-lg-3" data-aos="flip-right" data-aos-delay="400" data-aos-duration="1000">
+        <div class="card border-0 shadow h-100">
+          <img src="img/gallery-deluxe.jpg" class="card-img-top" alt="Camera Deluxe Fantinello">
+          <div class="card-body">
+            <h5 class="card-title">Camere Deluxe</h5>
+            <p class="card-text">Comfort, design e una vista mozzafiato: il tuo rifugio perfetto.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="esperienze-territorio" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 text-white fw-bold" data-aos="fade-up">Esperienze & Territorio</h2>
+
+    <!-- Prima riga: testo a sinistra, immagine a destra -->
+    <div class="row justify-content-center align-items-center mb-5 flex-column flex-lg-row text-center text-lg-start gap-5">
+      <div class="card-container text-white col-12 col-md-10 col-lg-5 py-4" data-aos="fade-right">
+        <h5 class="fw-bold">Laguna di Caorle e casoni</h5>
+        <p class="card-text">Immergiti nella bellezza naturale della laguna e visita i tipici casoni, le antiche abitazioni dei pescatori fatte di legno e canne palustri.</p>
+        <ul class="list-unstyled ps-3">
+          <li><i class="bi bi-check2-circle me-1"></i> Escursioni in barca tra i canali</li>
+          <li><i class="bi bi-check2-circle me-1"></i> Percorsi ciclopedonali fino a Falconera</li>
+          <li><i class="bi bi-check2-circle me-1"></i> Fotografia naturalistica e fauna locale</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-10 col-lg-5 py-4" data-aos="fade-left">
+        <img src="img/casoni.jpg" class="card-img-top rounded-5 img-fluid mx-auto d-block" alt="Laguna di Caorle e casoni">
+      </div>
+    </div>
+
+    <!-- Seconda riga: immagine a sinistra, testo a destra -->
+    <div class="row justify-content-center align-items-center mb-5 flex-column flex-lg-row text-center text-lg-start gap-5">
+      <div class="col-12 col-md-10 col-lg-5 py-4" data-aos="fade-right">
+        <img src="img/tenuta.jpg" class="card-img-top rounded-5 img-fluid mx-auto d-block" alt="Tenuta Ca' Corniani" style="object-fit: cover;">
+      </div>
+      <div class="card-container text-white col-12 col-md-10 col-lg-5 py-4" data-aos="fade-left">
+        <h5 class="fw-bold">Tenuta Ca’ Corniani</h5>
+        <p class="card-text">Un vasto spazio agricolo rigenerato con arte contemporanea, percorsi immersivi, eventi culturali e biodiversità.</p>
+        <ul class="list-unstyled ps-3">
+          <li><i class="bi bi-check2-circle me-1"></i> Percorsi ciclabili tra vigneti e installazioni</li>
+          <li><i class="bi bi-check2-circle me-1"></i> 4,5 km di strisce fiorite per impollinatori</li>
+          <li><i class="bi bi-check2-circle me-1"></i> Mostre, teatro e incontri estivi</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section class="bg-secondary-subtle text-dark py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-3">Prenota subito la tua vacanza a Caorle!</h2>
+    <p>Circondato dal suo parco privato, il nostro Fantinello Hotel si trova proprio sulla spiaggia di Levante di Caorle, Lungomare Trieste.</p>
+    <a href="https://secure.fantinellohotel.com/" class="btn btn-outline-dark btn-lg px-4">
+      Verifica disponibilità
+    </a>
+  </div>
+</section>
+
+
+
+
+
+    
+
+
+<!-- Footer -->
+
+<!-- Google Maps -->
+<div class="map-container text-center">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.0557178739377!2d12.893785276026568!3d45.6095242710767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477bf19574795105%3A0x42dd22154d790cc1!2sFantinello%20Hotel!5e0!3m2!1sen!2sit!4v1751661258814!5m2!1sen!2sit" 
+  width="1400"
+  height="450" 
+  style="border:0;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light pt-5">
+  <div class="container">
+    <div class="row gy-4">
+      
+      <!-- Contatti -->
+      <div class="col-md-4 text-center">
+        <h5>Contatti</h5>
+        <p class="mb-1">Via Pola, 1 - Spiaggia di Levante<br>30021 Caorle (VE) – ITALY</p>
+        <p class="mb-1">📞 +39 0421 81570</p>
+        <p class="mb-0">✉️ <a href="mailto:booking@fantinellohotel.it" class="link-light">booking@fantinellohotel.it</a></p>
+      </div>
+
+      <!-- Orari apertura -->
+      <div class="col-md-4 text-center">
+        <h5>Orari di apertura</h5>
+        <p class="mb-1">Apertura stagionale:</p>
+        <p class="mb-0">dal <strong>17 aprile 2025</strong><br>tutti i giorni dalle <strong>10:00</strong> alle <strong>22:00</strong></p>
+      </div>
+
+      <!-- Social & Promozioni -->
+      <div class="col-md-4 text-center">
+        <h5>Seguici</h5>
+        <a href="#" class="text-light me-2 fs-4"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-light me-2 fs-4"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-light fs-4"><i class="bi bi-twitter"></i></a>
+        <hr class="border-secondary my-3">
+        <h5>Offerta Early Booking</h5>
+        <p class="mb-2">Prenota in anticipo e risparmia!</p>
+        <a href="#booking" class="btn btn-outline-light btn-sm">Scopri l'offerta</a>
+      </div>
+    </div>
+
+    <div class="text-center mt-4 py-3 border-top border-secondary">
+      <small>&copy; 2025 Hilton Hotel di Caorle. Tutti i diritti riservati.</small>
+    </div>
+  </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false
+  });
+</script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
+
+
+
+
